@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .contenir{
+            width: 100%;
+            height: 100hv;
+            background-color: rgb(255, 255, 255);
+            padding: 0px 100px;
+        }
+        /* navbar va bot */
+        .navbar{
+            
+            padding: 30px 40px;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(247, 255, 247);
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        li{
+            list-style: none;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        .bot{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .bot1{
+            width: 50%;
+            height: 600px;
+            background-color: rgb(255, 252, 252);
+            margin: 20px;
+            position: relative;
+            padding: 130px 50px;
+        }
+        li{
+            font-size: 26px;
+        }
+        @media only screen and ( max-width:820px) {
+            .navbar{
+                height: 300px;
+                background-color: rgb(255, 255, 255);
+            }
+            ul{
+                display: block;
+                text-align: center;
+            }
+            li{
+                margin: 20px;
+                font-size: 23px;
+            }
+        }
+        @media only screen and ( max-width:850px) {
+            .bot{
+                height: 1500px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .bot1{
+                padding: 40px;
+                text-align: center;
+                margin: 10px;
+                width: 480px;
+                height: 600px;
+            }
+        }
+        @media only screen and ( max-width:1250px){
+            .bot1 img{
+            width: 100px;
+            height: 300px;
+        }
+        }
+        .bot1 img{
+            width: 500px;
+        }
+        .bot1 h1{
+            font-size: 46px;
+        }
+        .bot1 p{
+            font-size: 18px;
+        }
+        .bot1 button{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(57, 83, 177);
+        }
+        /* navbar va bot stayli tugashi */
+        /* not */
+        .not{
+            width: 100%;
+            height: 380px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .not1{
+            width: 50%;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            position: relative;
+            padding: 0px 20px;
+        }
+        @media only screen and ( max-width:850px) {
+            .not{
+                height: 800px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .not1{
+                padding: 40px;
+                text-align: center;
+                margin: 10px;
+                width: 500px;
+                height: 400px;
+            }
+        }
+        .not1 img{
+            position: relative;
+            bottom: 50px;
+            width: 100%;
+            height: 350px;
+        }
+        .not1 button{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(57, 83, 177);
+        }
+        .not1 p{
+            font-size: 19px;
+        }
+        .not3{
+            width: 100%;
+            height: 380px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .not2{
+            width: 50%;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            position: relative;
+            padding: 0px 20px;
+        }
+        @media only screen and ( max-width:850px) {
+            .not3{
+                height: 800px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+
+
+padding: 10px;
+            }
+            .not2{
+                padding: 40px;
+                text-align: center;
+                margin: 10px;
+                width: 500px;
+                height: 400px;
+            }
+        }
+        .not2 img{
+            width: 100%;
+            height: 350px;
+        }
+        /* cot */
+        .cot{
+            width: 100%;
+            height: 370px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .cot1{
+            width: 30%;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            position: relative;
+        }
+        @media only screen and ( max-width:850px) {
+            .cot{
+                height: 1170px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .cot1{
+                text-align: center;
+                margin: 10px;
+                width: 300px;
+                height: 350px;
+            }
+            .cot1 img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .cot1 img{
+            width:100% ;
+            height: 300px;
+        }
+        /* mot */
+        .mot{
+            width: 100%;
+            height: 370px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .mot1{
+            width: 30%;
+            height: 350px;
+            background-color: rgb(255, 252, 251);
+            margin: 20px;
+            position: relative;
+        }
+        @media only screen and ( max-width:850px) {
+            .mot{
+                height: 1170px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .mot1{
+                text-align: center;
+                margin: 10px;
+                width: 300px;
+                height: 350px;
+            }
+            .mot1 img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .mot1 img{
+            width:100% ;
+            height: 300px;
+        }
+        /* dot */
+        .dot{
+            width: 100%;
+            height: 370px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .dot1{
+            width: 30%;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            position: relative;
+        }
+        @media only screen and ( max-width:850px) {
+            .dot{
+                height: 1170px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .dot1{
+                text-align: center;
+                margin: 10px;
+                width: 300px;
+                height: 350px;
+            }
+            .dot1 img{
+                width: 100%;
+                height: 300px;
+            }
+        }
+        .dot1 img{
+            width:100% ;
+            height: 300px;
+        }
+        /* contact */
+        @media only screen and ( max-width:850px) {
+            .sot{
+                height: 1170px;
+                background-color: rgb(255, 255, 255);
+                display: block;
+                padding: 10px;
+            }
+            .sot1{
+                text-align: center;
+                margin: 10px;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .sot{
+            width: 100%;
+            height: 380px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+        .sot1{
+            width: 22%;
+            height: 300px;
+            background-color: rgb(255, 255, 255);
+            margin: 20px;
+            position: relative;
+        }
+
+        /* jot */
+                .jot{
+            width: 100%;
+            height: 700px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            display: none;
+        }
+        .jot1{
+            width: 50%;
+            height: 600px;
+            background-color: rgb(255, 252, 252);
+            margin: 20px;
+            position: relative;
+            padding: 130px 50px;
+        }
+         .jot1 img{
+            width: 500px;
+        }
+        .jot1 h1{
+            font-size: 46px;
+        }
+        .jot1 p{
+            font-size: 18px;
+        }
+        .jot1 button{
+            width: 180px;
+            height: 50px;
+            background-color: rgb(57, 83, 177);
+        }
+    </style>
+</head>
+<body>
+<div id="s" class="contenir">
+        <!-- navbar -->
+        <div class="navbar">
+            <ul>
+                <h1>Scaffold</h1>
+                <li><a href="./in.html">Home</a></li>
+                <li><a href="./ind.html">Abaut</a></li>
+                <li><a href="./inde.html">Servises</a></li>
+                <li><a href="./indew.html">Portfolio</a></li>
+                <li><a href="./indr.html">Cantact</a></li>
+            </ul>
+        </div>
+        <!-- navbar tugashi -->
+        <!-- bot  -->
+        <div class="bot">
+            <div style="padding: 350px 60px;" class="bot1">
+                <h1>Welcome to Our Website</h1><br>
+                <p>We are team of talented designers making websites with Bootstrap</p>
+                <br>
+                <button>Get Started</button>
+            </div>
+            <div class="bot1">
+                <img src="https://bootstrapmade.com/content/demo/Scaffold/assets/img/hero-img.png" alt="">
+            </div>
+        </div><br><br><br><br><br>
+        <!-- bot tugashi -->
+         <!-- not  -->
+         <div class="not">
+            <div style="padding: 50px  20px;" class="not1">
+                <img src=" https://bootstrapmade.com/content/demo/Scaffold/assets/img/about.jpg" alt="">
+            </div>
+            <div class="not1">
+                <h1>Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est repellat corrupti reprehenderit.</h1><br>
+                <p>Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, eos.</p><br>
+                <button>Red More</button>
+            </div>
+         </div><br><br><br><br><br><br>
+                 <!-- not divni tugashi -->
+              <!-- not3 -->
+         <div class="not3">
+            <div style="padding: 30px 0px;" class="not2">
+             <h1>Voluptatem dignissimos provident</h1><br>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+             <p>✔️ Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+             <p>✔️  Duis aute irure dolor in reprehenderit in voluptate velit. </p><br>
+             <p>✔️  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="not2">
+                <img src="https://bootstrapmade.com/content/demo/Scaffold/assets/img/working-1.jpg " alt="">
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br><br>
+        <!-- not3 tugashi -->
+         <div class="wot">
+            <h1 style="text-align: center;"> Services</h1>
+            <p style="text-align: center;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+  
+         </div>
+         <!-- cot -->
+         <div class="cot">
+            <div class="cot1">
+                <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/app-1.jpg " alt="">
+                <h2>App 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div class="cot1">
+                <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/product-1.jpg " alt="">
+                <h2>Product 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div class="cot1">
+                <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/branding-1.jpg " alt="">
+                <h2>Branding 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+        </div><br><br><br><br>
+        <!-- cot tugashi -->
+         <!-- mot -->
+          <div class="mot">
+            <div class="mot1">
+                <img src=" https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/books-1.jpg" alt="">
+                <h2>Books 1</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+
+<div class="mot1">
+                <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/app-2.jpg " alt="">
+                <h2>App 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+            <div class="mot1">
+                <img src=" https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/product-2.jpg" alt="">
+                <h2>Product 2</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div><br><br><br>
+          <!-- mot tugashi -->
+           <!-- dot -->
+            <div class="dot">
+                <div class="dot1">
+                    <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/branding-2.jpg " alt="">
+                    <h2>Branding 2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+                <div class="dot1">
+                    <img src=" https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/books-2.jpg" alt="">
+                    <h2>Books 2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+                <div class="dot1">
+                    <img src="https://bootstrapmade.com/content/demo/Remember/assets/img/portfolio/app-3.jpg " alt="">
+                    <h2>App 3</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+            </div><br><br><br><br>
+            <!-- contaktlar uchun -->
+            <div class="sot">
+                <div class="sot1">
+                    <h2>Scafold</h2><br>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p><br>
+                    <p>Phone: +1 5589 55488 55</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="sot1">
+                    <h3>Useful Links</h3><br>
+                    <p>Home</p><br>
+                    <p>About us</p><br>
+                    <p>Services</p><br>
+                    <p>Terms of service</p><br>
+                    <p>Privacy policy</p>
+                </div>
+                <div class="sot1">
+                    <h3>Our Services</h3><br>
+                    <p>Web Design</p><br>
+                    <p>Web Development</p><br>
+                    <p>Product Management</p><br>
+                    <p>Marketing</p><br>
+                    <p>Graphic Design</p>
+                </div>
+                <div class="sot1">
+                    <h3>Hic solutasetp</h3><br>
+                    <p>Molestiae accusamus iure</p><br>
+                    <p>Excepturi dignissimos</p><br>
+                    <p>Suscipit distinctio</p><br>
+                    <p>Dilecta</p><br>
+                    <p>Sit quas consectetur</p>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+</html>
+</body>
+</html>
